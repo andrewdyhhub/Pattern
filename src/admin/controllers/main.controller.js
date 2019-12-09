@@ -37,14 +37,14 @@ angular.module('controllers').controller('main', ['$scope', '$http',
 			}, function () {
 				$scope.$emit('notification', {
 					type: 'danger',
-					message: '读取控制面板数据失败'
+					message: '读取系统说明数据失败'
 				});
 			});
 
 		/**
 		 * NoderCMS 官方信息
 		 */
-		$http.get('http://console.nodercms.com/openApi/info')
+		$http.get('http://console.NoderCMS.com/openApi/info')
 			.then(function (res) {
 				var data = res.data;
 

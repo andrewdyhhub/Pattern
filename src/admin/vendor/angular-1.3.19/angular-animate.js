@@ -408,7 +408,7 @@ angular.module('ngAnimate', ['ng'])
    *
    * Requires the {@link ngAnimate `ngAnimate`} module to be installed.
    *
-   * Please visit the {@link ngAnimate `ngAnimate`} module overview page learn more about how to use animations in your application.
+   * Please visit the {@link ngAnimate `ngAnimate`} module 系统说明 page learn more about how to use animations in your application.
    *
    */
   .directive('ngAnimateChildren', function() {
@@ -812,7 +812,7 @@ angular.module('ngAnimate', ['ng'])
        *
        * Requires the {@link ngAnimate `ngAnimate`} module to be installed.
        *
-       * Please visit the {@link ngAnimate `ngAnimate`} module overview page learn more about how to use animations in your application.
+       * Please visit the {@link ngAnimate `ngAnimate`} module 系统说明 page learn more about how to use animations in your application.
        * ## Callback Promises
        * With AngularJS 1.3, each of the animation methods, on the `$animate` service, return a promise when called. The
        * promise itself is then resolved once the animation has completed itself, has been cancelled or has been

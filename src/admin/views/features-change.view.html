@@ -4,11 +4,11 @@
 <div class="page-header clearfix">
   <ol ng-if="action === 'create'" class="heading">
     <li><a ui-sref="main.features">{{model.name}}</a></li>
-    <li><a ui-sref="main.features.create({ model: model._id })">新增推荐</a></li>
+    <li><a ui-sref="main.features.create({ model: model._id })">新增企业</a></li>
   </ol>
   <ol ng-if="action === 'update'" class="heading">
     <li><a ui-sref="main.features">{{model.name}}</a></li>
-    <li><a ui-sref="main.features.update({ model: model._id, feature: _id })">更新推荐</a></li>
+    <li><a ui-sref="main.features.update({ model: model._id, feature: _id })">更新企业</a></li>
   </ol>
 </div>
 
@@ -18,15 +18,15 @@
       <div class="panel panel-default">
         <div class="panel-body table-responsive form-horizontal clear-bottom-padding">
           <div ng-class="{ 'has-error': featureForm.sort.$touched && featureForm.sort.$invalid }" class="form-group">
-            <label for="sort" class="col-sm-2 control-label">* 排序：</label>
+            <label for="sort" class="col-sm-2 control-label">* 名称：</label>
             <div class="col-sm-10">
-              <input ng-model="sort" ng-disabled="transmitting" type="number" min="0" class="form-control" id="sort" name="sort" placeholder="请输入排序" required>
+              <input ng-model="title" ng-disabled="transmitting" type="text" class="form-control" id="title" name="title" placeholder="请输入名称" required>
             </div>
           </div>
           <div ng-class="{ 'has-error': featureForm.title.$touched && featureForm.title.$invalid }" class="form-group">
-            <label for="sort" class="col-sm-2 control-label">* 标题：</label>
+            <label for="sort" class="col-sm-2 control-label">* 负责人：</label>
             <div class="col-sm-10">
-              <input ng-model="title" ng-disabled="transmitting" type="text" class="form-control" id="title" name="title" placeholder="请输入标题" required>
+              <input ng-model="title" ng-disabled="transmitting" type="text" class="form-control" id="title" name="title" placeholder="请输入负责人" required>
             </div>
           </div>
           <div ng-if="model.system.url" ng-class="{ 'has-error': featureForm.url.$touched && featureForm.url.$invalid }" class="form-group">
@@ -76,8 +76,8 @@
       <div class="panel panel-default">
         <div class="panel-heading">发布</div>
         <div class="panel-body">
-          <button ng-if="action === 'create'" ng-disabled="transmitting || featureForm.$invalid" class="btn btn-primary btn-block" type="submit" form="featureForm"><i class="fa fa-paper-plane"></i> 发布推荐</button>
-          <button ng-if="action === 'update'" ng-disabled="transmitting || featureForm.$invalid" class="btn btn-primary btn-block" type="submit" form="featureForm"><i class="fa fa-save"></i> 更新推荐</button>
+          <button ng-if="action === 'create'" ng-disabled="transmitting || featureForm.$invalid" class="btn btn-primary btn-block" type="submit" form="featureForm"><i class="fa fa-paper-plane"></i> 保存企业</button>
+          <button ng-if="action === 'update'" ng-disabled="transmitting || featureForm.$invalid" class="btn btn-primary btn-block" type="submit" form="featureForm"><i class="fa fa-save"></i> 更新企业</button>
         </div>
       </div>
     </div>

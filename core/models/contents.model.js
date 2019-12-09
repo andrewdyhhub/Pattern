@@ -24,7 +24,7 @@ var contentsSchema = new mongoose.Schema({
     required: true
   },
 
-  //标题
+  //负责人
   title: {
     type: String,
     required: true

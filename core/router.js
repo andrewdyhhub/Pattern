@@ -53,7 +53,7 @@ module.exports = {
     /**
      * 数据
      */
-    // 控制面板数据
+    // 系统说明数据
     '/dashboard': {
       get: 'dashboard'
     },
@@ -63,7 +63,7 @@ module.exports = {
       get: 'users.get'
     },
 
-    // 推荐
+    // 企业
     '/features': {
       get: [100100, 'features.all'],
       post: [100101, 'features.create'],
@@ -95,7 +95,7 @@ module.exports = {
       put: [100301, 'pages.save']
     },
 
-    // 媒体库
+    // 污染治理设施水平评估
     '/media': {
       get: [100400, 100100, 100200, 100300, 'media.list'],
       post: [100401, 100101, 100201, 100301, 'media.create'],

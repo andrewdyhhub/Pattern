@@ -38,7 +38,7 @@
 <article ui-view class="page view clearfix">
   <div class="page-header clearfix">
     <ol class="heading">
-      <li><a ui-sref="main">控制面板</a></li>
+      <li><a ui-sref="main">系统说明</a></li>
     </ol>
   </div>
   <div class="row">
@@ -53,19 +53,19 @@
           <hr>
           <div class="row text-center">
             <div class="col-xs-4">
-              <a href="http://www.nodercms.com" target="_blank">
+              <a href="http://www.NoderCMS.com" target="_blank">
                 <p><i class="fa fa-home fa-2x"></i></p>
                 <p>NoderCMS 官网</p>
               </a>
             </div>
             <div class="col-xs-4">
-              <a href="http://www.nodercms.com/help" target="_blank">
+              <a href="http://www.NoderCMS.com/help" target="_blank">
                 <p><i class="fa fa-question-circle fa-2x"></i></p>
                 <p>帮助中心</p>
               </a>
             </div>
             <div class="col-xs-4">
-              <a href="mailto:feedback@nodercms.com?subject=%E6%84%8F%E8%A7%81%E5%8F%8D%E9%A6%88" target="_blank">
+              <a href="mailto:feedback@NoderCMS.com?subject=%E6%84%8F%E8%A7%81%E5%8F%8D%E9%A6%88" target="_blank">
                 <p><i class="fa fa-envelope-o fa-2x"></i></p>
                 <p>反馈</p>
               </a>
@@ -121,11 +121,11 @@
             <div class="col-xs-5 text-right"><p><b>程序版本：</b></p></div>
             <div class="col-xs-7">
               <p>v{{systemInfo.version}} <small ng-if="!compareVersion(systemInfo.version, officialSystemInfo.version)" class="text-muted">已是最新版本</small></p>
-              <p><a ng-if="compareVersion(systemInfo.version, officialSystemInfo.version)" class="btn btn-info btn-xs" href="http://www.nodercms.com/download" target="_blank" role="button">最新版本 v{{officialSystemInfo.version}}</a></p>
+              <p><a ng-if="compareVersion(systemInfo.version, officialSystemInfo.version)" class="btn btn-info btn-xs" href="http://www.NoderCMS.com/download" target="_blank" role="button">最新版本 v{{officialSystemInfo.version}}</a></p>
             </div>
           </div>
           <div class="row">
-            <div class="col-xs-5 text-right"><p><b>操作系统：</b></p></div>
+            <div class="col-xs-5 text-right"><p><b>备注系统：</b></p></div>
             <div class="col-xs-7"><p>{{systemInfo.osType}} {{systemInfo.osRelease}}</p></div>
           </div>
           <div class="row">

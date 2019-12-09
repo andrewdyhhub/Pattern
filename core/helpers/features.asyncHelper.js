@@ -23,7 +23,7 @@ module.exports = function (callname, options, callback) {
         } else {
           var err = {
             type: 'database',
-            error: '找不到该推荐模型'
+            error: '找不到该企业模型'
           };
 
           callback(err);

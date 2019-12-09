@@ -234,7 +234,7 @@ angular.module('controllers').controller('featureModelChange', ['$scope', '$stat
     };
 
     /**
-     * 保存推荐位模型
+     * 保存企业位模型
      */
     $scope.saveModel = function () {
       $scope.transmitting = true;
@@ -265,7 +265,7 @@ angular.module('controllers').controller('featureModelChange', ['$scope', '$stat
 
                 $scope.$emit('notification', {
                   type: 'success',
-                  message: '保存推荐位成功'
+                  message: '保存企业位成功'
                 });
 
                 $scope.$emit('mainCategoriesUpdate');
@@ -277,7 +277,7 @@ angular.module('controllers').controller('featureModelChange', ['$scope', '$stat
           .error(function () {
             $scope.$emit('notification', {
               type: 'danger',
-              message: '保存推荐位失败'
+              message: '保存企业位失败'
             });
           });
       } else {
@@ -289,7 +289,7 @@ angular.module('controllers').controller('featureModelChange', ['$scope', '$stat
 
             $scope.$emit('notification', {
               type: 'success',
-              message: '保存推荐位成功'
+              message: '保存企业位成功'
             });
 
             $scope.$emit('mainCategoriesUpdate');
@@ -299,7 +299,7 @@ angular.module('controllers').controller('featureModelChange', ['$scope', '$stat
           .error(function () {
             $scope.$emit('notification', {
               type: 'danger',
-              message: '保存推荐位失败'
+              message: '保存企业位失败'
             });
           });
       }

@@ -14,7 +14,7 @@ angular.module('controllers').controller('featureModels', ['$scope', '$http', 'a
     $scope.systemKey = [
       {
         name: 'sort',
-        value: '排序'
+        value: '名称'
       },
       {
         name: 'thumbnail',
@@ -22,7 +22,7 @@ angular.module('controllers').controller('featureModels', ['$scope', '$http', 'a
       },
       {
         name: 'title',
-        value: '标题'
+        value: '负责人'
       },
       {
         name: 'url',
@@ -59,7 +59,7 @@ angular.module('controllers').controller('featureModels', ['$scope', '$http', 'a
     });
 
     /**
-     * 删除推荐位模型
+     * 删除企业位模型
      */
     $scope.deleteModel = function () {
       $scope.transmitting = true;
@@ -76,14 +76,14 @@ angular.module('controllers').controller('featureModels', ['$scope', '$http', 'a
 
               return $scope.$emit('notification', {
                 type: 'success',
-                message: '删除推荐位成功'
+                message: '删除企业位成功'
               });
             }
           }
         }, function () {
           $scope.$emit('notification', {
             type: 'danger',
-            message: '删除推荐位失败'
+            message: '删除企业位失败'
           });
         });
     };

@@ -223,7 +223,7 @@ function map(collection, callback) {
 }
 
 /**
- * @ngdoc overview
+ * @ngdoc 系统说明
  * @name ui.router.util
  *
  * @description
@@ -236,7 +236,7 @@ function map(collection, callback) {
 angular.module('ui.router.util', ['ng']);
 
 /**
- * @ngdoc overview
+ * @ngdoc 系统说明
  * @name ui.router.router
  * 
  * @requires ui.router.util
@@ -250,7 +250,7 @@ angular.module('ui.router.util', ['ng']);
 angular.module('ui.router.router', ['ui.router.util']);
 
 /**
- * @ngdoc overview
+ * @ngdoc 系统说明
  * @name ui.router.state
  * 
  * @requires ui.router.router
@@ -266,7 +266,7 @@ angular.module('ui.router.router', ['ui.router.util']);
 angular.module('ui.router.state', ['ui.router.router', 'ui.router.util']);
 
 /**
- * @ngdoc overview
+ * @ngdoc 系统说明
  * @name ui.router
  *
  * @requires ui.router.state

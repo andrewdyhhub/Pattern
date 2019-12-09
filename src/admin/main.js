@@ -1,7 +1,7 @@
 /**
  * I'm the King of the World!
  */
-angular.module('nodercms', [
+angular.module('NoderCMS', [
   'ngAnimate',
   'ipCookie',
   'ui.router',
@@ -56,7 +56,7 @@ angular.module('nodercms', [
         }
       })
 
-      // 控制面板
+      // 系统说明
       .state('main', {
         url: '^/admin',
         controller: 'main',
@@ -68,7 +68,7 @@ angular.module('nodercms', [
 		    }
       })
 
-      // 推荐管理
+      // 企业管理
       .state('main.features', {
         url: '^/admin/features',
         controller: 'features',
@@ -80,7 +80,7 @@ angular.module('nodercms', [
         }
       })
 
-      // 新增推荐
+      // 新增企业
       .state('main.features.create', {
         url: '^/admin/features/:model/create',
         controller: 'featuresChange',
@@ -92,7 +92,7 @@ angular.module('nodercms', [
         }
       })
 
-      // 更新推荐
+      // 更新企业
       .state('main.features.update', {
         url: '^/admin/features/:model/feature/:feature',
         controller: 'featuresChange',
@@ -186,7 +186,7 @@ angular.module('nodercms', [
         }
       })
 
-      // 媒体库
+      // 污染治理设施水平评估
       .state('main.media', {
         url: '^/admin/media',
         controller: 'media',
@@ -198,7 +198,7 @@ angular.module('nodercms', [
         }
       })
 
-      // 帐号设置
+      // 污染物排放现状
       .state('main.account', {
         url: '^/admin/account',
         controller: 'account',
@@ -294,7 +294,7 @@ angular.module('nodercms', [
         }
       })
 
-      // 推荐位配置
+      // 企业位配置
       .state('main.featureModels', {
         url: '^/admin/setting/feature-models',
         controller: 'featureModels',
@@ -306,7 +306,7 @@ angular.module('nodercms', [
         }
       })
 
-      // 推荐位配置 - 新增推荐位
+      // 企业位配置 - 新增企业位
       .state('main.featureModels.create', {
         url: '^/admin/setting/feature-models/create',
         controller: 'featureModelChange',
@@ -318,7 +318,7 @@ angular.module('nodercms', [
         }
       })
 
-      // 推荐位配置 - 更新推荐位
+      // 企业位配置 - 更新企业位
       .state('main.featureModels.update', {
         url: '^/admin/setting/feature-models/:_id',
         controller: 'featureModelChange',

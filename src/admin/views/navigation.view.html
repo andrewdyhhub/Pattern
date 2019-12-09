@@ -26,19 +26,19 @@
 		<li>
 			<a ui-sref="main" ui-sref-active-eq="active" class="item">
 				<i class="fa fa-dashboard fa-fw"></i>
-				控制面板
+				系统说明
 			</a>
 		</li>
 		<li ng-if="auths.features.read">
 			<a ui-sref="main.features" ui-sref-active="active" class="item">
 				<i class="fa fa-star fa-fw"></i>
-				推荐管理
+				企业管理
 			</a>
 		</li>
 		<li ng-if="auths.contents.read && !notFoundContents">
 			<div class="item sub-list-heading">
 				<i class="fa fa-book fa-fw"></i>
-				内容管理
+				工艺装备情况
 				<span class="caret"></span>
 			</div>
 			<div class="sub-list">
@@ -55,13 +55,13 @@
 		<li ng-if="auths.contents.read && notFoundContents">
 			<a ui-sref="main.notFoundContents" ui-sref-active="active" class="item">
 				<i class="fa fa-book fa-fw"></i>
-				内容管理
+				工艺装备情况
 			</a>
 		</li>
 		<li ng-if="auths.pages.read && !notFoundPages">
 			<div class="item sub-list-heading">
 				<i class="fa fa-sticky-note fa-fw"></i>
-				单页管理
+				配套环保设施台账
 				<span class="caret"></span>
 			</div>
 			<div class="sub-list">
@@ -74,25 +74,25 @@
 		<li ng-if="auths.pages.read && notFoundPages">
 			<a ui-sref="main.notFoundPages" ui-sref-active="active" class="item">
 				<i class="fa fa-sticky-note fa-fw"></i>
-				单页管理
+				配套环保设施台账
 			</a>
 		</li>
 		<li ng-if="auths.media.read">
 			<a ui-sref="main.media" ui-sref-active="active" class="item">
 				<i class="fa fa-archive fa-fw"></i>
-				媒体库
+				污染治理设施水平评估
 			</a>
 		</li>
 		<li ng-if="auths.account.read">
 			<a ui-sref="main.account" ui-sref-active="active" class="item">
 				<i class="fa fa-cog fa-fw"></i>
-				帐号设置
+				污染物排放现状
 			</a>
 		</li>
 		<li ng-if="auths.siteInfo.read || auths.categories.read || auths.contentModels.read || auths.featureModels.read || auths.roles.read || auths.adminUsers.read">
 			<div class="item sub-list-heading">
 				<i class="fa fa-cogs fa-fw"></i>
-				系统设置
+				对标“深度治理标准”
 				<span class="caret"></span>
 			</div>
 			<div class="sub-list">
@@ -110,7 +110,7 @@
 				</a>
 				<a ng-if="auths.featureModels.read" ui-sref="main.featureModels" ui-sref-active="active" class="item">
 					<i class="fa fa-circle-o fa-fw"></i>
-					推荐模型
+					企业模型
 				</a>
 				<a ng-if="auths.roles.read" ui-sref="main.roles" ui-sref-active="active" class="item">
 					<i class="fa fa-circle-o fa-fw"></i>

@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 /**
- * 推荐模型
+ * 企业模型
  */
 var featuresSchema = new mongoose.Schema({
   //模型 ID
@@ -11,7 +11,7 @@ var featuresSchema = new mongoose.Schema({
     required: true
   },
 
-  //排序
+  //名称
   sort: {
     type: Number,
     mix: 0,
@@ -19,7 +19,7 @@ var featuresSchema = new mongoose.Schema({
     required: true
   },
 
-  //标题
+  //负责人
   title: {
     type: String,
     required: true

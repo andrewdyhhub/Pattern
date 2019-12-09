@@ -21,7 +21,7 @@
 <div ui-view class="view">
   <div class="page-header clearfix">
     <ol class="heading pull-left">
-      <li><a ui-sref="main.featureModels">推荐模型</a></li>
+      <li><a ui-sref="main.featureModels">企业模型</a></li>
     </ol>
     <a ng-if="editAuth" ui-sref="main.featureModels.create" class="btn btn-primary btn-sm pull-right"><i class="fa fa-pencil"></i> 新增模型</a >
   </div>
@@ -30,13 +30,13 @@
       <table class="table table-hover">
         <thead class="text-center">
           <tr>
-            <th>排序</th>
+            <th>名称</th>
             <th>名称</th>
             <th>调用名</th>
             <th>启用的键</th>
             <th>条目数</th>
             <th>备注</th>
-            <th ng-if="editAuth">操作</th>
+            <th ng-if="editAuth">备注</th>
           </tr>
         </thead>
         <tbody class="text-center">

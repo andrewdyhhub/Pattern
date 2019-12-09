@@ -6,7 +6,7 @@ var featuresModel = require('../models/features.model');
 var mediaModel = require('../models/media.model');
 
 /**
- * 单条推荐模型
+ * 单条企业模型
  * @param {Object} options
  *        {MongoId} options._id
  * @param {Function} callback
@@ -50,7 +50,7 @@ exports.one = function (options, callback) {
 };
 
 /**
- * 所有推荐
+ * 所有企业
  * @param {Function} callback
  */
 exports.all = function (callback) {
@@ -85,7 +85,7 @@ exports.all = function (callback) {
 };
 
 /**
- * 存储推荐
+ * 存储企业
  * @param {Object} options
  *        {MongoId} options._id
  *        {Object} options.data
@@ -181,7 +181,7 @@ exports.save = function (options, callback) {
     });
   } else {
     async.waterfall([
-      //查询该推荐位模型
+      //查询该企业位模型
       function (callback) {
         modelsModel.findById(data.model, callback);
       },
@@ -196,21 +196,21 @@ exports.save = function (options, callback) {
           if (!_.get(model, 'mixed.limit')) {
             callback({
               type: 'system',
-              error: '找不到推荐模型条目数限制'
+              error: '找不到企业模型条目数限制'
             });
           }
 
           if (count >= model.mixed.limit) {
             callback({
               type: 'system',
-              error: '超出推荐模型条目数限制'
+              error: '超出企业模型条目数限制'
             });
           } else {
             callback();
           }
         });
       },
-      //新建推荐
+      //新建企业
       function (callback) {
         new featuresModel(data).save(function (err, feature) {
           callback(err, feature);
@@ -242,7 +242,7 @@ exports.save = function (options, callback) {
 };
 
 /**
- * 删除推荐
+ * 删除企业
  * @param {Object} options
  *        {MongoId} options._id
  * @param {Function} callback

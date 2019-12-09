@@ -4,7 +4,7 @@ var logger = require('../../lib/logger.lib');
 var featuresService = require('../services/features.service');
 
 /**
- * 获取推荐
+ * 获取企业
  * @param {Object} req
  * @param {Object} res
  */
@@ -20,7 +20,7 @@ exports.all = function (req, res) {
 };
 
 /**
- * 获取单个推荐
+ * 获取单个企业
  * @param {Object} req
  * @param {Object} res
  */
@@ -53,7 +53,7 @@ exports.one = function (req, res) {
 };
 
 /**
- * 存储推荐
+ * 存储企业
  * @param {Object} req
  *        {MongoId} req.body.model
  *        {Number} req.body.sort
@@ -133,7 +133,7 @@ exports.create = function (req, res) {
 };
 
 /**
- * 更新推荐
+ * 更新企业
  * @param {Object} req
  *        {MongoId} req.params.feature
  *        {MongoId} req.body._id
@@ -229,7 +229,7 @@ exports.update = function (req, res) {
 };
 
 /**
- * 删除推荐
+ * 删除企业
  * @param {Object} req
  *        {MongoId} req.params.feature
  * @param {Object} res

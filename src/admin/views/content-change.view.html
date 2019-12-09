@@ -18,10 +18,10 @@
       <div class="panel panel-default">
         <div class="panel-body table-responsive clear-bottom-padding">
           <div ng-class="{ 'has-error': contentForm.title.$touched && contentForm.title.$invalid }" class="form-group">
-            <label class="sr-only" for="title">* 标题</label>
+            <label class="sr-only" for="title">* 负责人</label>
             <div class="input-group">
-              <div class="input-group-addon">* 标题</div>
-              <input ng-model="title" ng-disabled="transmitting" class="form-control" id="title" type="text" name="title" placeholder="请输入内容标题" required>
+              <div class="input-group-addon">* 负责人</div>
+              <input ng-model="title" ng-disabled="transmitting" class="form-control" id="title" type="text" name="title" placeholder="请输入内容负责人" required>
             </div>
           </div>
           <div ng-class="{ 'has-error': contentForm.alias.$touched && contentForm.alias.$invalid }"

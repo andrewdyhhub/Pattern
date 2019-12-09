@@ -4283,7 +4283,7 @@ function $AnchorScrollProvider() {
    * @description
    * When called, it checks the current value of {@link ng.$location#hash $location.hash()} and
    * scrolls to the related element, according to the rules specified in the
-   * [Html5 spec](http://dev.w3.org/html5/spec/Overview.html#the-indicated-part-of-the-document).
+   * [Html5 spec](http://dev.w3.org/html5/spec/系统说明.html#the-indicated-part-of-the-document).
    *
    * It also watches the {@link ng.$location#hash $location.hash()} and automatically scrolls to
    * match any anchor whenever it changes. This can be disabled by calling

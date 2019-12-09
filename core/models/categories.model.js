@@ -34,7 +34,7 @@ var categoriesSchema = new mongoose.Schema({
     default: true
   },
 
-  // 排序
+  // 名称
   sort: {
     type: Number,
     default: 0

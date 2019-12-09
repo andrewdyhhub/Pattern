@@ -282,13 +282,13 @@ exports.remove = function (options, callback) {
                 multi: true, runValidators: true
               }, callback);
             },
-            // 删除推荐中的媒体引用
+            // 删除企业中的媒体引用
             function (callback) {
               featuresModel.update({ media: _id }, { $pull: { media: _id } }, {
                 multi: true, runValidators: true
               }, callback);
             },
-            // 删除推荐中的缩略图引用
+            // 删除企业中的缩略图引用
             function (callback) {
               featuresModel.update({ thumbnail: _id }, { $unset: { thumbnail: true } }, {
                 multi: true, runValidators: true

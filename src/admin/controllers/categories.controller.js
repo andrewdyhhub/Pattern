@@ -42,7 +42,7 @@ angular.module('controllers').controller('categories', ['$scope', '$http', 'acco
       });
 
     /**
-     * 分类排序
+     * 分类名称
      */
     $scope.categoriesSort = function () {
       var list = angular.copy($scope.categories);
@@ -85,7 +85,7 @@ angular.module('controllers').controller('categories', ['$scope', '$http', 'acco
         callback(tree);
       }
 
-      // 按树进行排序
+      // 按树进行名称
       tree(function (categories) {
         // 递归栏目
         (function loop (list, layer) {

@@ -43,7 +43,7 @@ angular.module('controllers').controller('features', ['$scope', '$rootScope', '$
         }).then(function (res) {
           callback(null, res.data);
         }, function () {
-          callback('读取推荐模型失败');
+          callback('读取企业模型失败');
         });
       },
       features: function (callback) {
@@ -51,7 +51,7 @@ angular.module('controllers').controller('features', ['$scope', '$rootScope', '$
           .then(function (res) {
             callback(null, res.data);
           }, function () {
-            callback('读取推荐失败');
+            callback('读取企业失败');
           });
       }
     }, function (err, results) {
@@ -76,7 +76,7 @@ angular.module('controllers').controller('features', ['$scope', '$rootScope', '$
     });
 
     /**
-     * 删除推荐
+     * 删除企业
      */
     $scope.deleteFeature = function () {
       $scope.transmitting = true;
@@ -100,12 +100,12 @@ angular.module('controllers').controller('features', ['$scope', '$rootScope', '$
 
           $scope.$emit('notification', {
             type: 'success',
-            message: '删除推荐成功'
+            message: '删除企业成功'
           });
         }, function () {
           $scope.$emit('notification', {
             type: 'danger',
-            message: '删除推荐失败'
+            message: '删除企业失败'
           });
         });
     };

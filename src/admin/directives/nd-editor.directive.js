@@ -78,7 +78,7 @@ angular.module('directives').directive('ndEditor',  ['$templateCache', '$timeout
                   {},
                   {
                     name: 'cmdMedia',
-                    title: '媒体库',
+                    title: '污染治理设施水平评估',
                     icon: { fa: 'fa fa-archive' },
                     callback: function (e) {
                       mediaSelect({}, function (activeMedia) {

@@ -1,6 +1,6 @@
 {
-  "name": "nodercms",
-  "description": "CMS内容管理系统",
+  "name": "NoderCMS",
+  "description": "CMS工艺装备情况系统",
   "version": "1.4.2",
   "author": {
     "name": "Welkin Wong",
@@ -9,9 +9,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/welkinwong/nodercms.git"
+    "url": "https://github.com/welkinwong/NoderCMS.git"
   },
-  "homepage": "https://www.nodercms.com",
+  "homepage": "https://www.NoderCMS.com",
   "keywords": [
     "NoderCMS",
     "node cms",
@@ -64,6 +64,6 @@
     "start": "node ./bin/www"
   },
   "bugs": {
-    "url": "https://github.com/welkinwong/nodercms/issues"
+    "url": "https://github.com/welkinwong/NoderCMS/issues"
   }
 }

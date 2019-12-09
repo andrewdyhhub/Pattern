@@ -43,7 +43,7 @@ module.exports = function (req, res) {
     };
 
     request({
-      url: 'http://console.nodercms.com/openApi/sites',
+      url: 'http://console.NoderCMS.com/openApi/sites',
       method: 'POST',
       body: data,
       json: true

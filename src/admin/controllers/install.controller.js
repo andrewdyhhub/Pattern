@@ -12,7 +12,7 @@ angular.module('controllers').controller('install', ['$scope', '$state', '$http'
     $scope.page = 'license';
     $scope.databaseHost = 'localhost';
     $scope.databasePort = 27017;
-    $scope.database = 'nodercms';
+    $scope.database = 'NoderCMS';
     $scope.databaseUser = '';
     $scope.databasePassword = '';
     $scope.databaseError = false;

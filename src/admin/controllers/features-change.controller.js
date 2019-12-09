@@ -21,7 +21,7 @@ angular.module('controllers').controller('featuresChange', ['$scope', '$state','
     $scope.disabledExtMediaAdd = {};
 
     /**
-     * 读取当前推荐模型和推荐
+     * 读取当前企业模型和企业
      */
     async.parallel({
       model: function (callback) {
@@ -29,7 +29,7 @@ angular.module('controllers').controller('featuresChange', ['$scope', '$state','
           .then(function (res) {
             callback(null, res.data);
           }, function () {
-            callback('读取推荐模型失败');
+            callback('读取企业模型失败');
           });
       },
       feature: function (callback) {
@@ -39,7 +39,7 @@ angular.module('controllers').controller('featuresChange', ['$scope', '$state','
           .then(function (res) {
             callback(null, res.data);
           }, function () {
-            callback('读取推荐失败');
+            callback('读取企业失败');
           });
       }
     }, function (err, result) {
@@ -135,7 +135,7 @@ angular.module('controllers').controller('featuresChange', ['$scope', '$state','
     };
 
     /**
-     * 保存当前推荐
+     * 保存当前企业
      */
     $scope.saveFeature = function () {
       $scope.transmitting = true;
@@ -156,14 +156,14 @@ angular.module('controllers').controller('featuresChange', ['$scope', '$state','
           .then(function () {
             $scope.$emit('notification', {
               type: 'success',
-              message: '更新推荐成功'
+              message: '更新企业成功'
             });
 
             $state.go('main.features', null, { reload: 'main.features' });
           }, function () {
             $scope.$emit('notification', {
               type: 'danger',
-              message: '更新推荐失败'
+              message: '更新企业失败'
             });
           });
       } else {
@@ -171,14 +171,14 @@ angular.module('controllers').controller('featuresChange', ['$scope', '$state','
           .then(function () {
             $scope.$emit('notification', {
               type: 'success',
-              message: '发布推荐成功'
+              message: '保存企业成功'
             });
 
             $state.go('main.features', null, { reload: 'main.features' });
           }, function () {
             $scope.$emit('notification', {
               type: 'danger',
-              message: '发布推荐失败'
+              message: '保存企业失败'
             });
           });
       }
