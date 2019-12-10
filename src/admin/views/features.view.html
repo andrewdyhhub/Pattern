@@ -21,12 +21,12 @@
 <div ui-view class="view">
   <div class="page-header">
     <ol class="heading">
-      <li><a ui-sref="main.features">推荐管理</a></li>
+      <li><a ui-sref="main.features">企业管理</a></li>
     </ol>
   </div>
   <div ng-if="noFeatureModel">
     <br><br><br>
-    <h4 class="text-center text-muted">尚未添加推荐模型，请前往“系统设置”中添加</h4>
+    <h4 class="text-center text-muted">尚未添加推荐模型，请前往“对标"深度治理标准"”中添加</h4>
   </div>
   <div ng-repeat="model in models | orderBy: 'mixed.sort'" class="panel panel-default">
     <div class="panel-heading">{{model.name}}<small ng-if="model.description" class="text-muted pull-right">{{model.description}}</small></div>

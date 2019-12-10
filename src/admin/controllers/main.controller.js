@@ -37,7 +37,7 @@ angular.module('controllers').controller('main', ['$scope', '$http',
 			}, function () {
 				$scope.$emit('notification', {
 					type: 'danger',
-					message: '读取控制面板数据失败'
+					message: '读取系统说明数据失败'
 				});
 			});
 

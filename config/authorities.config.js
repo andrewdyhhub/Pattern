@@ -9,7 +9,7 @@ module.exports = [
   },
   {
     name: 'features',
-    description: '推荐管理',
+    description: '企业管理',
     authorities: [
       {
         name: 'read',
@@ -25,7 +25,7 @@ module.exports = [
   },
   {
     name: 'contents',
-    description: '内容管理',
+    description: '工艺装备情况',
     authorities: [
       {
         name: 'read',
@@ -41,7 +41,7 @@ module.exports = [
   },
   {
     name: 'pages',
-    description: '单页管理',
+    description: '配套环保设施台账',
     authorities: [
       {
         name: 'read',
@@ -57,7 +57,7 @@ module.exports = [
   },
   {
     name: 'media',
-    description: '媒体库',
+    description: '污染治理设施水平评估',
     authorities: [
       {
         name: 'read',
@@ -73,7 +73,7 @@ module.exports = [
   },
   {
     name: 'account',
-    description: '账号设置',
+    description: '污染物排放现状',
     authorities: [
       {
         name: 'read',

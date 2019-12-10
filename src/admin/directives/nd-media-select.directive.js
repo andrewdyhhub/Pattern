@@ -1,6 +1,6 @@
 /**
  * ndMediaSelect Directives
- * 媒体库模态窗
+ * 污染治理设施水平评估模态窗
  */
 angular.module('directives').directive('ndMediaSelect',  ['$templateCache', '$timeout', '$filter', '$http', 'Upload',
   function ($templateCache, $timeout, $filter, $http, Upload) {
@@ -55,7 +55,7 @@ angular.module('directives').directive('ndMediaSelect',  ['$templateCache', '$ti
         }
 
         /**
-         * 向外层暴露媒体库接口
+         * 向外层暴露污染治理设施水平评估接口
          * @param options
          * @param callback
          */
@@ -69,7 +69,7 @@ angular.module('directives').directive('ndMediaSelect',  ['$templateCache', '$ti
         };
 
         /**
-         * 切换媒体库
+         * 切换污染治理设施水平评估
          * @param target
          */
         scope.selectViewSlide = function (target) {
@@ -111,7 +111,7 @@ angular.module('directives').directive('ndMediaSelect',  ['$templateCache', '$ti
         };
 
         /**
-         * 保存媒体库详情
+         * 保存污染治理设施水平评估详情
          */
         scope.saveThumbnailInfo = function () {
           scope.transmitting = true;
@@ -142,7 +142,7 @@ angular.module('directives').directive('ndMediaSelect',  ['$templateCache', '$ti
         };
 
         /**
-         * 读取媒体库
+         * 读取污染治理设施水平评估
          */
         function getMedia () {
           scope.mediaStore = [];

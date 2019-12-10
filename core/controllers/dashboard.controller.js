@@ -9,7 +9,7 @@ var usersService = require('../services/users.service');
 var mongoose = require('mongoose');
 
 /**
- * 控制面板数据
+ * 系统说明数据
  * @param {Object} req
  * @param {Object} res
  */

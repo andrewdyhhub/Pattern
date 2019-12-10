@@ -56,7 +56,7 @@ angular.module('nodercms', [
         }
       })
 
-      // 控制面板
+      // 系统说明
       .state('main', {
         url: '^/admin',
         controller: 'main',
@@ -68,7 +68,7 @@ angular.module('nodercms', [
 		    }
       })
 
-      // 推荐管理
+      // 企业管理
       .state('main.features', {
         url: '^/admin/features',
         controller: 'features',
@@ -186,7 +186,7 @@ angular.module('nodercms', [
         }
       })
 
-      // 媒体库
+      // 污染治理设施水平评估
       .state('main.media', {
         url: '^/admin/media',
         controller: 'media',

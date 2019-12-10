@@ -1,4 +1,4 @@
-# NoderCMS - 轻量级内容管理系统
+# NoderCMS - 轻量级工艺装备情况系统
 
 NoderCMS 使用 Node.js + MongoDB 开发，拥有灵活的内容模型以及完善的权限角色机制。
 
